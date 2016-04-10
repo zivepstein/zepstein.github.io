@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="themes/assets/ico/favicon.ico">
+  <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css'>
+    <title>Running Road Trip</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="themes/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="themes/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="themes/assets/css/carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">The Running Road Trip</a>
+
+
+
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="mainCarousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <script
+			src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+			</script>
+			<script>
+			var boulder=new google.maps.LatLng(40.0150,-105.2705);
+			var marker;
+			function initialize()
+			{
+			var mapProp = {
+			  center:new google.maps.LatLng(40.0150,-95.2705),
+			  zoom:4,
+			  mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+			marker=new google.maps.Marker({
+			  position:boulder,
+			 // icon:'themes/assets/images/nepali-momo.png',
+			  animation:google.maps.Animation.BOUNCE
+			  });
+
+			marker.setMap(map);
+
+			// Info open
+			var infowindow = new google.maps.InfoWindow({
+			  content:"Hello World!"
+			  });
+
+			google.maps.event.addListener(marker, 'click', function() {
+			  infowindow.open(map,marker);
+			  });
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+			</script>
+			<div id="googleMap" style="height:550px;"></div>
+
+			</div>
+		  </div>
+		</div><!-- /.carousel -->
+	</div>
+
+
+
+
+
+	<div class="introSection">
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="cntr">We are four collegiate and recreational runners on a 3-month quest to run in every state for Alzhiemers.</h1>
+        <div class="cntr">
+          <div class = "row">
+          <a href="http://twitter.com/minimalmonkey" class="icon-button twitter"><i class="icon-twitter icon-3x"></i><span></span></a>
+<a href="http://facebook.com" class="icon-button facebook"><i class="icon-facebook icon-3x"></i><span></span></a>
+<a href="http://plus.google.com" class="icon-button google-plus"><i class="icon-google-plus icon-3x"></i><span></span></a>
+
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----...[Encrypted message]...-----END PKCS7-----">
+
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"quot;0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt=""quot;0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
+          </form>
+        </div>
+  </div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+	 <div class="container marketing">
+    <h2 class="itemsTitle">Breakfast</h2>
+	<div id="myCarousel1" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-inner">
+        <div class="item active">
+         <div class="row">
+        <div class="col-lg-4">
+          <img src="themes/assets/images/salate.png" alt="Generic placeholder image">
+          <h4>Salates</h4>
+          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="themes/assets/images/burger.png" alt="Generic placeholder image">
+          <h4>Meal</h4>
+          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="themes/assets/images/drinks.png" alt="Generic placeholder image">
+          <h4>Drink</h4>
+          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+        </div>
+        <div class="item">
+         <div class="row">
+        <div class="col-lg-4">
+          <img src="themes/assets/images/salate.png" alt="Generic placeholder image">
+          <h4>Salates</h4>
+          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="themes/assets/images/burger.png" alt="Generic placeholder image">
+          <h4>Meal</h4>
+          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="themes/assets/images/drinks.png" alt="Generic placeholder image">
+          <h4>Drink</h4>
+          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+        </div>
+        <div class="item">
+          <div class="row">
+        <div class="col-lg-4">
+          <img  src="themes/assets/images/salate.png" alt="Generic placeholder image">
+          <h4>Salates</h4>
+          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img  src="themes/assets/images/burger.png" alt="Generic placeholder image">
+          <h4>Meal</h4>
+          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img  src="themes/assets/images/drinks.png" alt="Generic placeholder image">
+          <h4>Drink</h4>
+          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel1" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel1" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+	</div>
+
+
+
+
+	<div class="introSection">
+		<div class="container">
+		<div class="row">
+      <div class = "cntr">
+        <h1>Our team</h1>
+      </div>
+      </div>
+      <div class="row">
+
+		<div class="col-lg-3">
+		<h3>Nico Erikson-Deriso</h3>
+		<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+		text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+		It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br><br>
+
+		</p>
+		</div>
+
+		<div class="col-lg-3">
+		<h3>Sadie Witt</h3>
+		<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+		text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+		It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br><br>
+
+		</p>
+
+		</div>
+
+    <div class="col-lg-3">
+		<h3>Bailee Mulholland</h3>
+		<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+		text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+		It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br><br>
+
+		</p>
+
+		</div>
+
+		<div class="col-lg-3">
+		<h3>Ziv Epstein</h3>
+		<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+		text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+		</p>
+
+		</div>
+
+		</div>
+		</div>
+	</div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="themes/dist/js/bootstrap.min.js"></script>
+    <script src="themes/assets/js/holder.js"></script>
+  </body>
+</html>
